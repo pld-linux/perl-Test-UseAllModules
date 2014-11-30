@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define	pdir	Test
 %define	pnam	UseAllModules
+%include	/usr/lib/rpm/macros.perl
 Summary:	Test::UseAllModules - do use_ok() for all the MANIFESTed modules
 Summary(pl.UTF-8):	Test::UseAllModules - wykonaj use_ok() dla wszystkich modułów MANIFEST
 Name:		perl-Test-UseAllModules
@@ -15,12 +15,9 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Test/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	b591f8f8de76dd36422a60e2d02fcbdd
-# generic URL, check or change before uncommenting
-#URL:		http://search.cpan.org/dist/Test-UseAllModules/
+URL:		http://search.cpan.org/dist/Test-UseAllModules/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-%if %{with tests}
-%endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
