@@ -4,7 +4,6 @@
 
 %define	pdir	Test
 %define	pnam	UseAllModules
-%include	/usr/lib/rpm/macros.perl
 Summary:	Test::UseAllModules - do use_ok() for all the MANIFESTed modules
 Summary(pl.UTF-8):	Test::UseAllModules - wykonaj use_ok() dla wszystkich modułów MANIFEST
 Name:		perl-Test-UseAllModules
